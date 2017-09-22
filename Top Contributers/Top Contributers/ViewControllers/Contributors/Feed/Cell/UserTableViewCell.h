@@ -13,5 +13,6 @@
 - (void)setTitle:(NSString *)title;
 - (void)setImageFromURL:(NSURL *)url;
 - (void)setInitials:(NSString *)initials;
+- (void)setDetailsText:(NSString *)text;
 
 @end

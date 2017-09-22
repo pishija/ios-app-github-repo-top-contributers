@@ -59,20 +59,19 @@
 
 - (void)loadDataForOffset:(NSInteger)offset{
     [self.view showTakeOverLoading];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        sleep(1);
-        NSMutableArray *array = [[NSMutableArray alloc] init];
-        for(int i = 0; i < 10; ++i){
-            GHUser *user = [[GHUser alloc] init];
-            [user fillWithDummy];
-            
-            [array addObject:user];
-        }
-        dispatch_async(dispatch_get_main_queue(),^{
-            [self.view hideTakeOverLoading];
-            [self.view appendContributors:array];
-        });
-    });
+    
+    __block TopContributorsFeedPresenter *weakSelf = self;
+    [self.apiManager fetchContributorsForRepo:self.repo
+                                        owner:self.owner
+                                         page:(offset / 30) + 1
+                              completionBlock:^(NSArray *users, NSError *error) {
+                                  [weakSelf.view hideTakeOverLoading];
+                                  if (error == nil){
+                                      [weakSelf.view appendContributors:users];
+                                  } else{
+                                      [weakSelf.view showError:error];
+                                  }
+                              }];
 }
 
 - (void)attachView:(ContributorsFeedViewController *)view{

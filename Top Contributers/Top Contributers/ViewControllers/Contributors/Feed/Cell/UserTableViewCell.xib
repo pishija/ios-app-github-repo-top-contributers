@@ -39,6 +39,12 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1q6-FJ-cJt">
+                        <rect key="frame" x="69" y="38" width="235" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.56470588239999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="UgW-oW-LmD" secondAttribute="trailing" constant="8" id="3G2-3y-zDd"/>
@@ -48,12 +54,16 @@
                     <constraint firstItem="yLG-nG-AKK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="DAP-yd-1GY"/>
                     <constraint firstItem="UgW-oW-LmD" firstAttribute="leading" secondItem="yLG-nG-AKK" secondAttribute="trailing" constant="8" id="JVm-fN-f1E"/>
                     <constraint firstItem="d0p-vG-lVw" firstAttribute="height" secondItem="yLG-nG-AKK" secondAttribute="height" id="KlD-D1-M5U"/>
+                    <constraint firstItem="1q6-FJ-cJt" firstAttribute="trailing" secondItem="UgW-oW-LmD" secondAttribute="trailing" id="OLk-EN-cWD"/>
+                    <constraint firstItem="1q6-FJ-cJt" firstAttribute="leading" secondItem="UgW-oW-LmD" secondAttribute="leading" id="d3U-uD-CBy"/>
+                    <constraint firstItem="1q6-FJ-cJt" firstAttribute="top" secondItem="UgW-oW-LmD" secondAttribute="bottom" constant="-1.5" id="ezE-cD-NuY"/>
                     <constraint firstItem="yLG-nG-AKK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xZb-Ez-Nhd"/>
                     <constraint firstAttribute="bottom" secondItem="yLG-nG-AKK" secondAttribute="bottom" constant="5" id="xzM-17-L5R"/>
                     <constraint firstItem="d0p-vG-lVw" firstAttribute="centerY" secondItem="yLG-nG-AKK" secondAttribute="centerY" id="zwr-rP-Gn6"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="detailsLabel" destination="1q6-FJ-cJt" id="000-SW-sa6"/>
                 <outlet property="foodImageView" destination="yLG-nG-AKK" id="wx2-Gh-QTa"/>
                 <outlet property="initialsLabel" destination="d0p-vG-lVw" id="RWO-Of-GdW"/>
                 <outlet property="titleLabel" destination="UgW-oW-LmD" id="KRN-hE-a1N"/>

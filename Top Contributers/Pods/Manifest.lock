@@ -16,17 +16,22 @@ PODS:
     - AFNetworking/NSURLSession
   - JSONModel (1.7.0)
   - MBProgressHUD (1.0.0)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - JSONModel (~> 1.0)
   - MBProgressHUD (~> 1.0)
+  - SDWebImage (~> 4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: b6b1c0087d5294efa6430a55025641f2ce9f2c05
+PODFILE CHECKSUM: d8eb3838bfa53999bf99887b7436a71d5ffc4096
 
 COCOAPODS: 1.2.1

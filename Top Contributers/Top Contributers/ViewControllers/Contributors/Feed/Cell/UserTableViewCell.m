@@ -7,6 +7,7 @@
 //
 
 #import "UserTableViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface UserTableViewCell ()
 
@@ -14,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *initialsLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
 
 @end
 
@@ -24,6 +26,7 @@
 - (void)prepareForReuse
 {
     self.initialsLabel.text = @"";
+    self.initialsLabel.hidden = NO;
 }
 
 #pragma mark - Public methods
@@ -34,12 +37,21 @@
 
 
 - (void)setImageFromURL:(NSURL *)url{
+    [self.foodImageView sd_setImageWithURL:url];
+    
+    if(url != nil){
+        self.initialsLabel.hidden = YES;
+    }
 }
 
 - (void)setInitials:(NSString *)initials{
     if(initials.length <= 2){
         self.initialsLabel.text = initials;
     }
+}
+
+- (void)setDetailsText:(NSString *)text{
+    self.detailsLabel.text = text;
 }
 
 @end

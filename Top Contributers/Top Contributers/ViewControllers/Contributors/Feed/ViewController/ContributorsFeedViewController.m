@@ -85,6 +85,8 @@
     
     [cell setImageFromURL:avatarURL];
     
+    [cell setDetailsText:[user html_url]];
+    
     return cell;
 }
 
