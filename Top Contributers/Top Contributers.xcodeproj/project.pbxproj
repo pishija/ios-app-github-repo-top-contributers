@@ -15,6 +15,8 @@
 		66D56F2F1F753CA900407352 /* ContributorsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */; };
 		66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F351F753FAD00407352 /* AppFlowCoordinator.m */; };
 		66D56F3B1F75434E00407352 /* GHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F3A1F75434E00407352 /* GHUser.m */; };
+		66D56F3F1F754A1600407352 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F3D1F754A1600407352 /* UserTableViewCell.m */; };
+		66D56F401F754A1600407352 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F3E1F754A1600407352 /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		66D56F351F753FAD00407352 /* AppFlowCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFlowCoordinator.m; sourceTree = "<group>"; };
 		66D56F391F75434E00407352 /* GHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUser.h; sourceTree = "<group>"; };
 		66D56F3A1F75434E00407352 /* GHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUser.m; sourceTree = "<group>"; };
+		66D56F3C1F754A1600407352 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		66D56F3D1F754A1600407352 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		66D56F3E1F754A1600407352 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +69,11 @@
 		66D56EF81F753ADB00407352 /* Top Contributers */ = {
 			isa = PBXGroup;
 			children = (
-				66D56F371F75432E00407352 /* Models */,
 				66D56F101F753B5D00407352 /* Application */,
-				66D56F151F753B5D00407352 /* FlowCoordinators */,
-				66D56F161F753B5D00407352 /* Resources */,
 				66D56F191F753B5D00407352 /* ViewControllers */,
+				66D56F151F753B5D00407352 /* FlowCoordinators */,
+				66D56F371F75432E00407352 /* Models */,
+				66D56F161F753B5D00407352 /* Resources */,
 			);
 			path = "Top Contributers";
 			sourceTree = "<group>";
@@ -131,6 +136,9 @@
 		66D56F261F753C6B00407352 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				66D56F3C1F754A1600407352 /* UserTableViewCell.h */,
+				66D56F3D1F754A1600407352 /* UserTableViewCell.m */,
+				66D56F3E1F754A1600407352 /* UserTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D56F2F1F753CA900407352 /* ContributorsFeedViewController.xib in Resources */,
+				66D56F401F754A1600407352 /* UserTableViewCell.xib in Resources */,
 				66D56F1E1F753B5D00407352 /* LaunchScreen.storyboard in Resources */,
 				66D56F1D1F753B5D00407352 /* Assets.xcassets in Resources */,
 			);
@@ -268,6 +277,7 @@
 				66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */,
 				66D56F1C1F753B5D00407352 /* main.m in Sources */,
 				66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */,
+				66D56F3F1F754A1600407352 /* UserTableViewCell.m in Sources */,
 				66D56F1A1F753B5D00407352 /* AppDelegate.m in Sources */,
 				66D56F3B1F75434E00407352 /* GHUser.m in Sources */,
 			);

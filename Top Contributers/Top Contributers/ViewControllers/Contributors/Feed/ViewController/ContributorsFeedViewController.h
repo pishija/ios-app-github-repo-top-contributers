@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContributorsFeedViewController : UIViewController
+@interface ContributorsFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
