@@ -19,7 +19,6 @@
     [self.view showTakeOverLoading];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         sleep(1);
-        [self.view hideTakeOverLoading];
         NSMutableArray *array = [[NSMutableArray alloc] init];
         for(int i = 0; i < 10; ++i){
             GHUser *user = [[GHUser alloc] init];
@@ -27,7 +26,10 @@
             
             [array addObject:user];
         }
-        [self.view setContributors:array];
+        dispatch_async(dispatch_get_main_queue(),^{
+            [self.view hideTakeOverLoading];
+            [self.view setContributors:array];
+        });
     });
 }
 
@@ -35,7 +37,6 @@
     [self.view showTakeOverLoading];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         sleep(1);
-        [self.view hideTakeOverLoading];
         NSMutableArray *array = [[NSMutableArray alloc] init];
         for(int i = 0; i < 10; ++i){
             GHUser *user = [[GHUser alloc] init];
@@ -43,7 +44,10 @@
             
             [array addObject:user];
         }
-        [self.view appendContributors:array];
+        dispatch_async(dispatch_get_main_queue(),^{
+            [self.view hideTakeOverLoading];
+            [self.view appendContributors:array];
+        });
     });
 }
 

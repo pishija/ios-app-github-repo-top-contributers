@@ -9,6 +9,7 @@
 #import "ContributorsFeedViewController.h"
 #import "UserTableViewCell.h"
 #import "GHUser.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #define kUserTableCellIdentifier @"UserTableCellIdentifier"
 
@@ -112,19 +113,21 @@
 }
 
 - (void)showTakeOverLoading{
-    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (void)hideTakeOverLoading{
-    
+    [MBProgressHUD hideHUDForView:self.view animated:NO];
 }
 
 - (void)showPaginationLoading{
-    
+    //This for show that code works. I add table footer view for pagination loading
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (void)hidePaginatonLoadin{
-    
+    //This for show that code works. I add table footer view for pagination loading
+    [MBProgressHUD hideHUDForView:self.view animated:NO];
 }
 
 @end
