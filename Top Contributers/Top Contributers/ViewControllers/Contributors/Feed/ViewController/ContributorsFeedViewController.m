@@ -82,9 +82,20 @@
     return cell;
 }
 
+#pragma mark - <UITableViewDelegate>
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60.0;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    float endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height;
+    if (endScrolling >= scrollView.contentSize.height)
+    {
+        [self.presenter loadDataForOffset:[self.dataSource count]];
+    }
 }
 
 #pragma mark - Public interface

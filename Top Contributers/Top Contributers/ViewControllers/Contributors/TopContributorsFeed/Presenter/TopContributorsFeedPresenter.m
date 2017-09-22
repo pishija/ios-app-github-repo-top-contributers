@@ -8,6 +8,7 @@
 
 #import "TopContributorsFeedPresenter.h"
 #import "ContributorsFeedViewController.h"
+#import "GHUser.h"
 
 @implementation TopContributorsFeedPresenter
 
@@ -15,10 +16,35 @@
 
 - (void)loadData{
     
+    [self.view showTakeOverLoading];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        sleep(1);
+        [self.view hideTakeOverLoading];
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        for(int i = 0; i < 10; ++i){
+            GHUser *user = [[GHUser alloc] init];
+            [user fillWithDummy];
+            
+            [array addObject:user];
+        }
+        [self.view setContributors:array];
+    });
 }
 
 - (void)loadDataForOffset:(NSInteger)offset{
-    
+    [self.view showTakeOverLoading];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        sleep(1);
+        [self.view hideTakeOverLoading];
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        for(int i = 0; i < 10; ++i){
+            GHUser *user = [[GHUser alloc] init];
+            [user fillWithDummy];
+            
+            [array addObject:user];
+        }
+        [self.view appendContributors:array];
+    });
 }
 
 - (void)attachView:(ContributorsFeedViewController *)view{
@@ -27,7 +53,7 @@
 }
 
 - (void)detachView{
-    
+    self.view = nil;
 }
 
 @end
