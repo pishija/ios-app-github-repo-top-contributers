@@ -23,6 +23,7 @@
 - (void)hideTakeOverLoading;
 - (void)showPaginationLoading;
 - (void)hidePaginatonLoadin;
+- (void)showError:(NSError *)error;
 
 
 @end

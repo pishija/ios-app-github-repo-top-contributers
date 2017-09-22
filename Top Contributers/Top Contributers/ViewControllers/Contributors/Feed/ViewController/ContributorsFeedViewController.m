@@ -77,8 +77,13 @@
     UserTableViewCell *cell = (UserTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:kUserTableCellIdentifier];
     GHUser *user = self.dataSource[indexPath.row];
     
+    NSURL *avatarURL = [NSURL URLWithString:[user avatar_url]];
+    
     [cell setTitle:user.login];
-    [cell setInitials:@"AM"];
+    
+    [cell setInitials:[user.login substringWithRange:NSMakeRange(0, 2)]];
+    
+    [cell setImageFromURL:avatarURL];
     
     return cell;
 }
@@ -128,6 +133,19 @@
 - (void)hidePaginatonLoadin{
     //This for show that code works. I add table footer view for pagination loading
     [MBProgressHUD hideHUDForView:self.view animated:NO];
+}
+
+- (void)showError:(NSError *)error{
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                         message:[NSString stringWithFormat:@"Error heppened: %@",error.description]
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil];
+    
+    [controller addAction:okAction];
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

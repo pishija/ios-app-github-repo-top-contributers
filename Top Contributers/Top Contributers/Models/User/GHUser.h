@@ -6,14 +6,14 @@
 //  Copyright © 2017 Rumberos. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
 //For the sake of the example mapping from snake_case to camelCase is skipped.
 
-@interface GHUser : NSObject
+@interface GHUser : JSONModel
 
 @property (nonatomic, copy) NSString *login;
-@property (nonatomic) NSInteger *uid; //Map from id to uid because id is reserved word
+@property (nonatomic) NSNumber *uid; //Map from id to uid because id is reserved word
 @property (nonatomic, copy) NSString *avatar_url;
 @property (nonatomic, copy) NSString *gravatar_id;
 @property (nonatomic, copy) NSString *url;
@@ -29,19 +29,18 @@
 @property (nonatomic, copy) NSString *received_events_url;
 @property (nonatomic, copy) NSString *type; //This field should be enum in the future
 @property (nonatomic) BOOL site_admin;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *company;
-@property (nonatomic, copy) NSString *blog;
-@property (nonatomic, copy) NSString *location;
-@property (nonatomic, copy) NSString *email;
-@property (nonatomic) BOOL hireable;
-@property (nonatomic, copy) NSString *bio;
-@property (nonatomic) NSInteger public_repos;
-@property (nonatomic) NSInteger public_gists;
-@property (nonatomic) NSInteger followers;
-@property (nonatomic) NSInteger following;
-@property (nonatomic, copy) NSDate *created_at;
-@property (nonatomic, copy) NSDate *updated_at;
+@property (nonatomic, copy) NSString <Optional> *name;
+@property (nonatomic, copy) NSString <Optional> *company;
+@property (nonatomic, copy) NSString <Optional> *blog;
+@property (nonatomic, copy) NSString <Optional> *location;
+@property (nonatomic, copy) NSString <Optional> *email;
+@property (nonatomic, copy) NSNumber <Optional> *hireable;
+@property (nonatomic, copy) NSString <Optional> *bio;
+@property (nonatomic, copy) NSNumber <Optional> *public_repos;
+@property (nonatomic, copy) NSNumber <Optional> *followers;
+@property (nonatomic, copy) NSNumber <Optional> *following;
+@property (nonatomic, copy) NSString <Optional> *created_at;
+@property (nonatomic, copy) NSString <Optional> *updated_at;
 
 - (void)fillWithDummy;
 

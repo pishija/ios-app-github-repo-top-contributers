@@ -10,6 +10,14 @@
 
 @implementation GHUser
 
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{
+                                                                  @"uid": @"id",
+                                                                  }];
+}
+
 - (void)fillWithDummy{
     self.name = @"Test";
     self.login = @"Testisov";

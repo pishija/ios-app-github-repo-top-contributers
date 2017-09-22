@@ -11,4 +11,9 @@
 
 @interface TopContributorsFeedPresenter : NSObject <ContributorsFeedPresenterInterface>
 
+@property (nonatomic, readonly) NSString *repo;
+@property (nonatomic, readonly) NSString *owner;
+
+- (instancetype)initWithRepo:(NSString *)repo owner:(NSString *)owner;
+
 @end

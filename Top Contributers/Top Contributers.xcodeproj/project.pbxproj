@@ -19,6 +19,7 @@
 		66D56F401F754A1600407352 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F3E1F754A1600407352 /* UserTableViewCell.xib */; };
 		66D56F431F75538600407352 /* ContributorsFeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F421F75538600407352 /* ContributorsFeedPresenter.m */; };
 		66D56F461F75542800407352 /* TopContributorsFeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F451F75542800407352 /* TopContributorsFeedPresenter.m */; };
+		66D56F4A1F75A11900407352 /* GHApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F491F75A11900407352 /* GHApiManager.m */; };
 		80E9452FDAB7339A6BAD9001 /* libPods-Top Contributers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18973C369B372C9743911E /* libPods-Top Contributers.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		66D56F421F75538600407352 /* ContributorsFeedPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsFeedPresenter.m; sourceTree = "<group>"; };
 		66D56F441F75542800407352 /* TopContributorsFeedPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopContributorsFeedPresenter.h; sourceTree = "<group>"; };
 		66D56F451F75542800407352 /* TopContributorsFeedPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopContributorsFeedPresenter.m; sourceTree = "<group>"; };
+		66D56F481F75A11900407352 /* GHApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHApiManager.h; sourceTree = "<group>"; };
+		66D56F491F75A11900407352 /* GHApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHApiManager.m; sourceTree = "<group>"; };
 		BEE12861460027721583B116 /* Pods-Top Contributers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Contributers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Top Contributers/Pods-Top Contributers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +89,7 @@
 				66D56F191F753B5D00407352 /* ViewControllers */,
 				66D56F151F753B5D00407352 /* FlowCoordinators */,
 				66D56F371F75432E00407352 /* Models */,
+				66D56F471F759CD700407352 /* Services */,
 				66D56F161F753B5D00407352 /* Resources */,
 			);
 			path = "Top Contributers";
@@ -216,6 +220,15 @@
 				66D56F3A1F75434E00407352 /* GHUser.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		66D56F471F759CD700407352 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F481F75A11900407352 /* GHApiManager.h */,
+				66D56F491F75A11900407352 /* GHApiManager.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		780269F16FFD975562ADE14E /* Pods */ = {
@@ -360,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */,
+				66D56F4A1F75A11900407352 /* GHApiManager.m in Sources */,
 				66D56F431F75538600407352 /* ContributorsFeedPresenter.m in Sources */,
 				66D56F1C1F753B5D00407352 /* main.m in Sources */,
 				66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */,
