@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66D56EFB1F753ADB00407352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56EFA1F753ADB00407352 /* main.m */; };
-		66D56EFE1F753ADB00407352 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56EFD1F753ADB00407352 /* AppDelegate.m */; };
-		66D56F011F753ADB00407352 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F001F753ADB00407352 /* ViewController.m */; };
-		66D56F041F753ADB00407352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F021F753ADB00407352 /* Main.storyboard */; };
-		66D56F061F753ADB00407352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F051F753ADB00407352 /* Assets.xcassets */; };
-		66D56F091F753ADB00407352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F071F753ADB00407352 /* LaunchScreen.storyboard */; };
+		66D56F1A1F753B5D00407352 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F121F753B5D00407352 /* AppDelegate.m */; };
+		66D56F1C1F753B5D00407352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F141F753B5D00407352 /* main.m */; };
+		66D56F1D1F753B5D00407352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F171F753B5D00407352 /* Assets.xcassets */; };
+		66D56F1E1F753B5D00407352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F181F753B5D00407352 /* LaunchScreen.storyboard */; };
+		66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F2C1F753CA900407352 /* ContributorsFeedViewController.m */; };
+		66D56F2F1F753CA900407352 /* ContributorsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		66D56EF61F753ADB00407352 /* Top Contributers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Contributers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66D56EFA1F753ADB00407352 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66D56EFC1F753ADB00407352 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		66D56EFD1F753ADB00407352 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		66D56EFF1F753ADB00407352 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		66D56F001F753ADB00407352 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		66D56F031F753ADB00407352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		66D56F051F753ADB00407352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		66D56F081F753ADB00407352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		66D56F0A1F753ADB00407352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D56F111F753B5D00407352 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66D56F121F753B5D00407352 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66D56F131F753B5D00407352 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D56F141F753B5D00407352 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66D56F171F753B5D00407352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D56F181F753B5D00407352 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66D56F2B1F753CA900407352 /* ContributorsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsFeedViewController.h; sourceTree = "<group>"; };
+		66D56F2C1F753CA900407352 /* ContributorsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsFeedViewController.m; sourceTree = "<group>"; };
+		66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsFeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,25 +58,105 @@
 		66D56EF81F753ADB00407352 /* Top Contributers */ = {
 			isa = PBXGroup;
 			children = (
-				66D56EFC1F753ADB00407352 /* AppDelegate.h */,
-				66D56EFD1F753ADB00407352 /* AppDelegate.m */,
-				66D56EFF1F753ADB00407352 /* ViewController.h */,
-				66D56F001F753ADB00407352 /* ViewController.m */,
-				66D56F021F753ADB00407352 /* Main.storyboard */,
-				66D56F051F753ADB00407352 /* Assets.xcassets */,
-				66D56F071F753ADB00407352 /* LaunchScreen.storyboard */,
-				66D56F0A1F753ADB00407352 /* Info.plist */,
-				66D56EF91F753ADB00407352 /* Supporting Files */,
+				66D56F101F753B5D00407352 /* Application */,
+				66D56F151F753B5D00407352 /* FlowCoordinators */,
+				66D56F161F753B5D00407352 /* Resources */,
+				66D56F191F753B5D00407352 /* ViewControllers */,
 			);
 			path = "Top Contributers";
 			sourceTree = "<group>";
 		};
-		66D56EF91F753ADB00407352 /* Supporting Files */ = {
+		66D56F101F753B5D00407352 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				66D56EFA1F753ADB00407352 /* main.m */,
+				66D56F111F753B5D00407352 /* AppDelegate.h */,
+				66D56F121F753B5D00407352 /* AppDelegate.m */,
+				66D56F131F753B5D00407352 /* Info.plist */,
+				66D56F141F753B5D00407352 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		66D56F151F753B5D00407352 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		66D56F161F753B5D00407352 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F171F753B5D00407352 /* Assets.xcassets */,
+				66D56F181F753B5D00407352 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66D56F191F753B5D00407352 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F241F753C6B00407352 /* Contributors */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		66D56F241F753C6B00407352 /* Contributors */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F251F753C6B00407352 /* Feed */,
+				66D56F291F753C6B00407352 /* TopContributorsFeed */,
+			);
+			path = Contributors;
+			sourceTree = "<group>";
+		};
+		66D56F251F753C6B00407352 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F261F753C6B00407352 /* Cell */,
+				66D56F271F753C6B00407352 /* Presenter */,
+				66D56F281F753C6B00407352 /* ViewController */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		66D56F261F753C6B00407352 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		66D56F271F753C6B00407352 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		66D56F281F753C6B00407352 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F2B1F753CA900407352 /* ContributorsFeedViewController.h */,
+				66D56F2C1F753CA900407352 /* ContributorsFeedViewController.m */,
+				66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		66D56F291F753C6B00407352 /* TopContributorsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F2A1F753C6B00407352 /* Presenter */,
+			);
+			path = TopContributorsFeed;
+			sourceTree = "<group>";
+		};
+		66D56F2A1F753C6B00407352 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D56F091F753ADB00407352 /* LaunchScreen.storyboard in Resources */,
-				66D56F061F753ADB00407352 /* Assets.xcassets in Resources */,
-				66D56F041F753ADB00407352 /* Main.storyboard in Resources */,
+				66D56F2F1F753CA900407352 /* ContributorsFeedViewController.xib in Resources */,
+				66D56F1E1F753B5D00407352 /* LaunchScreen.storyboard in Resources */,
+				66D56F1D1F753B5D00407352 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,32 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D56F011F753ADB00407352 /* ViewController.m in Sources */,
-				66D56EFE1F753ADB00407352 /* AppDelegate.m in Sources */,
-				66D56EFB1F753ADB00407352 /* main.m in Sources */,
+				66D56F1C1F753B5D00407352 /* main.m in Sources */,
+				66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */,
+				66D56F1A1F753B5D00407352 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		66D56F021F753ADB00407352 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66D56F031F753ADB00407352 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		66D56F071F753ADB00407352 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66D56F081F753ADB00407352 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		66D56F0B1F753ADB00407352 /* Debug */ = {
@@ -274,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UJR3R8VME;
-				INFOPLIST_FILE = "Top Contributers/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Top Contributers/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumberos.Top-Contributers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UJR3R8VME;
-				INFOPLIST_FILE = "Top Contributers/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Top Contributers/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumberos.Top-Contributers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
