@@ -8,6 +8,7 @@
 
 #import "AppFlowCoordinator.h"
 #import "ContributorsFeedViewController.h"
+#import "TopContributorsFeedPresenter.h"
 
 @interface AppFlowCoordinator ()
 
@@ -37,7 +38,8 @@
 - (UINavigationController *)rootViewControler{
     if (_rootViewControler == nil){
         
-        ContributorsFeedViewController *viewController = [[ContributorsFeedViewController alloc] init];
+        TopContributorsFeedPresenter *presenter = [[TopContributorsFeedPresenter alloc] init];
+        ContributorsFeedViewController *viewController = [[ContributorsFeedViewController alloc] initWithPresenter:presenter];
         _rootViewControler = [[UINavigationController alloc] initWithRootViewController:viewController];
     }
     return  _rootViewControler;

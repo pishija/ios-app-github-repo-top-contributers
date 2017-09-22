@@ -17,6 +17,8 @@
 		66D56F3B1F75434E00407352 /* GHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F3A1F75434E00407352 /* GHUser.m */; };
 		66D56F3F1F754A1600407352 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F3D1F754A1600407352 /* UserTableViewCell.m */; };
 		66D56F401F754A1600407352 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F3E1F754A1600407352 /* UserTableViewCell.xib */; };
+		66D56F431F75538600407352 /* ContributorsFeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F421F75538600407352 /* ContributorsFeedPresenter.m */; };
+		66D56F461F75542800407352 /* TopContributorsFeedPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F451F75542800407352 /* TopContributorsFeedPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		66D56F3C1F754A1600407352 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		66D56F3D1F754A1600407352 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		66D56F3E1F754A1600407352 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		66D56F411F75538600407352 /* ContributorsFeedPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsFeedPresenter.h; sourceTree = "<group>"; };
+		66D56F421F75538600407352 /* ContributorsFeedPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsFeedPresenter.m; sourceTree = "<group>"; };
+		66D56F441F75542800407352 /* TopContributorsFeedPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopContributorsFeedPresenter.h; sourceTree = "<group>"; };
+		66D56F451F75542800407352 /* TopContributorsFeedPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopContributorsFeedPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,8 @@
 		66D56F271F753C6B00407352 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				66D56F411F75538600407352 /* ContributorsFeedPresenter.h */,
+				66D56F421F75538600407352 /* ContributorsFeedPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 		66D56F2A1F753C6B00407352 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				66D56F441F75542800407352 /* TopContributorsFeedPresenter.h */,
+				66D56F451F75542800407352 /* TopContributorsFeedPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -275,10 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */,
+				66D56F431F75538600407352 /* ContributorsFeedPresenter.m in Sources */,
 				66D56F1C1F753B5D00407352 /* main.m in Sources */,
 				66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */,
 				66D56F3F1F754A1600407352 /* UserTableViewCell.m in Sources */,
 				66D56F1A1F753B5D00407352 /* AppDelegate.m in Sources */,
+				66D56F461F75542800407352 /* TopContributorsFeedPresenter.m in Sources */,
 				66D56F3B1F75434E00407352 /* GHUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +431,7 @@
 				66D56F0F1F753ADB00407352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
