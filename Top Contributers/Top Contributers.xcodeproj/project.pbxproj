@@ -13,6 +13,7 @@
 		66D56F1E1F753B5D00407352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F181F753B5D00407352 /* LaunchScreen.storyboard */; };
 		66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F2C1F753CA900407352 /* ContributorsFeedViewController.m */; };
 		66D56F2F1F753CA900407352 /* ContributorsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */; };
+		66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D56F351F753FAD00407352 /* AppFlowCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		66D56F2B1F753CA900407352 /* ContributorsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsFeedViewController.h; sourceTree = "<group>"; };
 		66D56F2C1F753CA900407352 /* ContributorsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsFeedViewController.m; sourceTree = "<group>"; };
 		66D56F2D1F753CA900407352 /* ContributorsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsFeedViewController.xib; sourceTree = "<group>"; };
+		66D56F341F753FAD00407352 /* AppFlowCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFlowCoordinator.h; sourceTree = "<group>"; };
+		66D56F351F753FAD00407352 /* AppFlowCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFlowCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 		66D56F151F753B5D00407352 /* FlowCoordinators */ = {
 			isa = PBXGroup;
 			children = (
+				66D56F331F753FAD00407352 /* AppFlow */,
 			);
 			path = FlowCoordinators;
 			sourceTree = "<group>";
@@ -159,6 +163,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		66D56F331F753FAD00407352 /* AppFlow */ = {
+			isa = PBXGroup;
+			children = (
+				66D56F341F753FAD00407352 /* AppFlowCoordinator.h */,
+				66D56F351F753FAD00407352 /* AppFlowCoordinator.m */,
+			);
+			path = AppFlow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D56F361F753FAD00407352 /* AppFlowCoordinator.m in Sources */,
 				66D56F1C1F753B5D00407352 /* main.m in Sources */,
 				66D56F2E1F753CA900407352 /* ContributorsFeedViewController.m in Sources */,
 				66D56F1A1F753B5D00407352 /* AppDelegate.m in Sources */,

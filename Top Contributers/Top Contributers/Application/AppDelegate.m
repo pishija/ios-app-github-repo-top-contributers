@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "ContributorsFeedViewController.h"
+#import "AppFlowCoordinator.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) AppFlowCoordinator *appFlowCoordinator;
 
 @end
 
@@ -23,10 +26,8 @@
     
     [self.window makeKeyAndVisible];
     
-    ContributorsFeedViewController *contributorsFeedViewController = [[ContributorsFeedViewController alloc] init];
-    
-    self.window.rootViewController = contributorsFeedViewController;
-    
+    self.appFlowCoordinator = [[AppFlowCoordinator alloc] initWithWindow:self.window];
+    [self.appFlowCoordinator start];
     
     return YES;
 }
